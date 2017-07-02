@@ -1,0 +1,58 @@
+permalink: /:year/:month/:title.html 
+#include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+# for math
+# markdown: redcarpet
+markdown: kramdown
+highlights: pygments
+#url: 
+lsi: false
+safe: true
+
+# unsfixed
+# Error:  No source of timezone data could be found.
+# Please refer to http://tzinfo.github.io/datasourcenotfound for help resolving this error.
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#timezone: Asia/Shanghai
+
+auto: false 
+
+paginate: 8
+paginate_path: "page:num"
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+JB :
+  IMAGE_PATH : /img
+
+# presonal config
+title: ishx Home
+baseurl: ""
+
+me:
+  name: ishxiao
+  author: Xiao Shang  
+  email: me@ishxiao.com
+  domain: http://ishxiao.com
+  description: "Stay hungry, stay foolish."
+
+github:
+  username: ishxiao
+  gh-page:  ishxiao.github.io
+  homepage: https://github.com  
+  icon: favicon.ico
+  avatar: https://avatars2.githubusercontent.com/u/22900608?v=3&amp;s=64
+  
+
+plugins: 
+  jekyll-paginate:
+
+config:
+  js_dir:
+  img_dir:
+  css_dir:
