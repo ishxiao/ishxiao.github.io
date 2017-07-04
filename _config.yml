@@ -15,7 +15,7 @@ safe: true
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #timezone: Asia/Shanghai
 
-auto: false 
+# auto: false 
 
 paginate: 8
 paginate_path: "page:num"
