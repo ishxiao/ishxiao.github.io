@@ -12,7 +12,7 @@
 @font-face{font-family:'museo_700regular';src:url('../fonts/museo700-regular-webfont.eot');src:url('../fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/museo700-regular-webfont.woff') format('woff'),url('../fonts/museo700-regular-webfont.ttf') format('truetype'),url('../fonts/museo700-regular-webfont.svg#museo_700regular') format('svg');font-weight:normal;font-style:normal}
 
 body {
-    padding-top: 70px;
+    padding-top: 80px;
     font-size:16px;word-spacing:1px;
     margin-left:auto;
     margin-right:auto;
@@ -120,8 +120,12 @@ nav{
 	border-radius: 0;
 }
 .navbar-nav li{
-	width: 95px;
+	width: 80px;
 	text-align: center;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 /* index main */
@@ -612,5 +616,3 @@ blockquote:last-child {
 		padding-left: 25px;
 	}
 }
-
-
