@@ -1,0 +1,36 @@
+<!-- Static navbar -->
+<nav class="navbar navbar-inverse navbar-default navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{site.baseurl}}/index.html">{{ site.title }}</a>
+        </div>
+		<!-- navbar-form -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse ">
+			<ul class="nav navbar-nav">			
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="{{site.baseurl}}/categories.html">Categories</a></li>
+					<li><a href="{{site.baseurl}}/tags.html">Tags</a></li>
+					<li><a href="{{site.baseurl}}/archives.html">Archives</a></li>
+				</ul>
+			</li>
+			<li><a href="{{site.baseurl}}/notes.html">Notes</a></li>
+			<li><a href="{{site.baseurl}}/about.html">About</a></li>
+			</ul>
+			<div>
+		</div>
+		<!-- /.navbar-form -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
