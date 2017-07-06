@@ -1,0 +1,83 @@
+--- 
+layout: default 
+--- 
+
+<!--
+<h1>{{ page.title }}</h1>
+{{ content }}
+<a href="{{ site.baseurl }}/index.html">Go back</a>
+-->
+<!-- Blog Post -->
+<!-- Title -->
+<div class="row">
+  <div class="post-area post">
+
+ 	<div class="post-list-body">
+        	<div class="all-posts" post-cate="All">
+ 		<header>
+		<h1>
+		  {{ page.title }}
+		  <div class="post-date"><a href="{{ site.github.homepage}}/{{site.github.username}}/{{site.github.gh-page}}/blob/gh-pages/{{page.path}}" target="_blank">Modify</a>&nbsp;&nbsp;
+			<span class="glyphicon glyphicon-time"></span>
+			{{ page.date | date_to_string }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+		  </div>
+		</h1>
+ 		</header>
+		<!-- Author -->
+		<hr>
+		 <article>
+		{{ content }}
+		  </article>
+		<hr>
+	<br/>
+        <p>
+          Create by <a href="mailto:{{ site.me.email }}">{{ site.me.name }}</a> 
+        </p>
+	<div style="margin-top:10px;margin-bottom:10px">
+	  {%if page.previous%}
+	  <span class="next">
+	    Previous：
+	    <a href="{{site.baseurl}}{{page.previous.url}}">
+	      {{page.previous.title}}
+	    </a>
+	  </span>
+	  {%endif%} 
+	  {%if page.next%}
+	  <span class="prev">
+	    Next：
+	    <a href="{{site.baseurl}}{{page.next.url}}">
+	      {{page.next.title}}
+	    </a>
+	  </span>
+	  {%endif%}
+	</div>
+	</div>
+	
+        {% for category in site.categories %}
+	<div post-cate="{{category | first}}">
+          <ul class="posts">
+            {% for posts in category  %}
+              {% for post in posts %}
+                {% if post.url %}
+		<li>
+                  <a href="{{site.baseurl}}{{ post.url }}" class="post-list-item">
+                    <h2>{{ post.title }}</h2>
+                    <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  </a>
+		</li>
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+          </ul>
+	</div>
+        {% endfor %}
+	 </div>
+
+</div>
+
+
+<!-- Blog Comments -->
+<div class="media">
+
+</div> 
+</div>
