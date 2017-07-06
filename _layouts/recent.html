@@ -2,13 +2,8 @@
 layout: default 
 --- 
 
-<ul class = "text-left">
-	<a href = "{{site.baseurl}}/"><h1>{{site.title}}</h1></a>
-	<!-- Loop output paged posts -->
-   {% for post in site.posts %}
-	   <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-	   <span class="date">{{ post.date | date_to_string }}</span>
-	   <p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p>
-	   <p> <a href="{{ site.baseurl }}{{ post.url }}"><span >Read More &raquo; </span></a></p>
-   {% endfor %}
+<ul class="list-inline text-center">
+<h1>ishx Home</h1>
+<a class="letters extra-link" href="{{site.baseurl}}/blog" target="_blank">Blog</a><br>
+<a class="footer-code-link" href="{{site.github.homepage}}/{{site.github.gh-pages}}">GitHub</a>
 </ul>

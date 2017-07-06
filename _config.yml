@@ -28,10 +28,10 @@ kramdown:
   enable_coderay: false
 
 JB :
-  IMAGE_PATH : /img
+  IMAGE_PATH : /images
 
 # presonal config
-title: ishx Home
+title: iShX Home
 baseurl: ""
 
 me:
