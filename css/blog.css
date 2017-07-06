@@ -5,7 +5,7 @@
  */
 
 body {
-    padding-top: 60px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 footer {
@@ -18,3 +18,8 @@ footer {
 	font-size:12px
 }
 
+/*
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+}*/
