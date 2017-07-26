@@ -6,6 +6,7 @@ title: About
 ## Resume
 
 * ishxiao
+* Stay hungry, stay foolish
 * Research in Quantum Physics
 
 ## Contact
