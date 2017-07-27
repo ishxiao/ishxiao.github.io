@@ -1,44 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	
-		<!-- Header -->
-		{% include header.html %}
-
-	</head>
+  <head>
+    {% include header.html %}
+  </head>
 	<!-- hack iOS CSS :active style -->
-	<body ontouchstart="">
-		<div class="container" style="max-width: 960px;">
-			
-			<!-- Introduction -->
-			<!-- {% include intro.html %} -->
-
-			<!-- Navbar -->	
-			{% include navbar.html %} 
-
-			<!-- Page Content -->
-			<div class="container">
-				<div class="row">
-					<!-- home Entries Column -->
-					<div class="col-md-8">
-					  {{ content }}
-					</div>
-
-				<div id="top" data-toggle="tooltip" data-placement="left" title="Back To Top">
-					<a href="javascript:;">
-					<div class="arrow"></div>
-					<div class="stick"></div>
-					</a>
-				</div>
-			</div>		
-			
-			<!-- Footer -->
-			{% include footer.html %}
-		
-		</div> <!-- container -->
+  <body ontouchstart="">
+    <div class="container" style="max-width: 960px;">
 	
-		<!-- Scripts -->
-		{% include scripts.html %}
+      <!--{ %include intro.html %}-->
+      {% include navbar.html %} 
+
+	  {{ content }}
+
+	</div> <!-- container -->
 	
-	</body>
+    {% include footer.html %}
+    {% include scripts.html %}	
+  </body>
 </html>
