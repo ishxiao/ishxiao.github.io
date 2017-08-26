@@ -13,7 +13,7 @@ body {
 	/*background-size: 960px 720px;*/
 	/*background-size: contain;*/
 	/*background-clip: padding-box;*/
-	background-color: transparent
+	background-color: transparent;
 }
 
 footer {
@@ -29,5 +29,16 @@ footer {
 
 .navbar-default {
   background-color: transparent;
+  /*background-color: #ffffff;*/
   border-color: transparent;
+  /*opacity:0.75;*/
+  /*filter:alpha(opacity=75);*/ /* 针对 IE8 以及更早的版本 */
+}
+
+.content{
+	background-color: #ffffff;
+	border: 1px none black;
+	border-radius: 0.5em;
+	opacity:0.75;
+    filter:alpha(opacity=75); /* 针对 IE8 以及更早的版本 */
 }
