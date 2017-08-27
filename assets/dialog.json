@@ -122,7 +122,7 @@
     }, {
         "id": "0011",
         "details": [
-            ["这是<a href='http://www.phy.pku.edu.cn/~qhcao/Misc/Misc/index_thooft.html'>我最近读过的好书</a>，希望你也喜欢~"]
+            ["这是<a href='http://ishxiao.com/blog/2017/08/how-to-become-a-good-theoretical-physicist.html'>我最近读过的好书</a>，希望你也喜欢~"]
         ],
         "nextishx": ["0013"]
     }, {
@@ -255,7 +255,7 @@
         "id": "0025",
         "details": [
             [
-                "<a href='https://en.wikipedia.org/wiki/Quantum_mechanics'>Quantum mechanics (QM; also known as quantum physics or quantum theory), including quantum field theory</a>"
+                "<a href='https://en.wikipedia.org/wiki/Quantum_mechanics'>Quantum mechanics</a> (QM; also known as quantum physics or quantum theory), including quantum field theory, is a branch of physics which is the fundamental theory of nature at the small scales and energy levels of atoms and subatomic particles."
             ]
         ]
     }, {
@@ -375,7 +375,7 @@
     }, {
         "id": "0036",
         "details": [
-            ["代码在 GitHub 上开源", "<a href='https://github.com/ishxiao/ishxiao.github.io'>https://github.com/ishxiao/ishxiao.github.io</a>", "欢迎围观点赞"]
+            ["代码在 GitHub 上开源", "<a href='https://github.com/ishxiao/ishxiao.github.io'>ishxiao</a>", "欢迎围观点赞"]
         ]
     }, {
         "id": "0037",
