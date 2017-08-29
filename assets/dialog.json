@@ -2,13 +2,13 @@
     "fromishx": [{
         "id": "0000",
         "details": [
-            ["很高兴遇见你"]
+            ["初见心动，再见依然"]
         ],
         "responses": [{
             "content": "我也是！",
             "nextishx": ["0003"]
         }, {
-            "content": "我很怀疑这点……",
+            "content": "我很怀疑这点耶……",
             "nextishx": ["0001"]
         }, {
             "content": "真的吗？",
@@ -66,7 +66,8 @@
             ["话是没错啦……", "不过，反正你也不能输入文字哈哈~"]
         ],
         "responses": [{
-            "content": "……"
+            "content": "……",
+			"nextishx": ["0041"]
         }, {
             "content": "算你狠"
         }]
@@ -423,7 +424,12 @@
         "responses": [{
             "content": "O(∩_∩)O哈哈~"
         }]
-    }],
+    }, {
+	    "id": "0041",
+		"details": [
+		    ["或许", "你可以看看我的<a href='http://ishxiao.com/blog/'>博客</a>"]
+		]
+	}],
     "fromUser": [{
         "id": "1000",
         "brief": "爱好",
@@ -463,6 +469,13 @@
             "可以看看你的设计作品吗？"
         ],
         "nextishx": ["0022"]
+    },{
+        "id": "1020",
+        "brief": "博客",
+        "details": [
+            ["艾希小好棒啊！你一定有自己的博客吧"]
+        ],
+        "nextishx": ["0041"]
     }, {
         "id": "1014",
         "brief": "送书",
