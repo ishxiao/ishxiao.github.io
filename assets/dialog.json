@@ -364,7 +364,7 @@
     }, {
         "id": "0035",
         "details": [
-            ["对了，本站的动画效果都是男朋友帮我写的", "<a href='https://github.com/ishxiao'>GitHub</a>"]
+            ["对了，本站的动画效果都是<a href='https://github.com/ishxiao'>男朋友</a>帮我写的"]
         ],
         "responses": [{
             "content": "这恩爱秀得……行行行，狗粮费拿去就是！",
@@ -376,7 +376,7 @@
     }, {
         "id": "0036",
         "details": [
-            ["代码在 GitHub 上开源", "<a href='https://github.com/ishxiao/ishxiao.github.io'>ishxiao</a>", "欢迎围观点赞"]
+            ["代码托管在这里<a href='https://github.com/ishxiao/ishxiao.github.io'>ishxiao</a>", "欢迎围观点赞噢"]
         ]
     }, {
         "id": "0037",
