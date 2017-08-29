@@ -129,9 +129,9 @@ body {
     position: relative;
     font-family: Lato;
     font-size: 14px;
-    background-color: #e9fbf8;
+    /*background-color: #e9fbf8;
     background-image: -webkit-radial-gradient(ellipse farthest-corner at 50% 0, #DBF5F1 0%, #9BE4D8 100%);
-    background-image: radial-gradient(ellipse farthest-corner at 50% 0, #DBF5F1 0%, #9BE4D8 100%)
+    background-image: radial-gradient(ellipse farthest-corner at 50% 0, #DBF5F1 0%, #9BE4D8 100%)*/
 }
 
 ul {
@@ -235,7 +235,7 @@ img {
     top: 45px;
     bottom: 55px;
     width: 100%;
-    background: #E8F9F6
+    background: #E8F9F6;
 }
 
 #mobile-body a {
@@ -642,6 +642,7 @@ img {
     }
 }
 
+/*
 body {
     background-image: url(../images/bg-rainbow.jpg);
     background-repeat: repeat-y;
@@ -649,4 +650,4 @@ body {
     background-attachment: fixed;
     background-size: contain;
     opacity: 0.75
-}
+}*/
