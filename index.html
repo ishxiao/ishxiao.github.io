@@ -29,7 +29,7 @@
     <body>
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
-                <div id="mobile-head-title">与艾希小聊天中</div>
+                <div id="mobile-head-title">Chatting with ishxiao</div>
             </div>
             <div id="mobile-body">
                 <div id="mobile-body-bg"></div>
@@ -52,7 +52,7 @@
             <div id="mobile-foot">
                 <div id="prompt">
                     <div id="prompt-head">
-                        <div class="say-something">说点什么……</div>
+                        <div class="say-something">Say something...</div>
                         <a href="javascript:;" class="close-btn"
                             v-on:click="togglePrompt(false)"></a>
                     </div>
@@ -75,8 +75,8 @@
                 <div id="input-hint" class="say-something"
                     v-on:click="togglePrompt(true)"
                     :class="{'clickable': !isishxTyping }">
-                    <span v-if="!isishxTyping">说点什么……</span>
-                    <span v-if="isishxTyping">艾希小正在输入中</span>
+                    <span v-if="!isishxTyping">Say something...</span>
+                    <span v-if="isishxTyping">ishxiao is typing</span>
                 </div>
             </div>
             <div id="prompt-bg" v-on:click="togglePrompt(false)"></div>
