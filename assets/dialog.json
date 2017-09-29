@@ -51,7 +51,11 @@
     }, {
         "id": "0005",
         "details": [
-            ["ishxiao is my domain name, and more details seeing", "<a href='http://ishxiao.com'>http://ishxiao.com</a>"]
+            ["ishxiao is my domain name.", 
+			 "If you were talking with me, you may have known this fact.",
+			 "Or to be precise",
+			 "<a href='http://ishxiao.com'>http://ishxiao.com</a>"
+			 ]
         ],
         "responses": [{
             "content": "What do you do?",
@@ -427,7 +431,7 @@
     }, {
 	    "id": "0041",
 		"details": [
-		    ["However", "You can read my<a href='http://ishxiao.com/blog/'>Blog</a>"]
+		    ["However", "You can read my <a href='http://ishxiao.com/blog/'>Blog</a>"]
 		]
 	}],
     "fromUser": [{
