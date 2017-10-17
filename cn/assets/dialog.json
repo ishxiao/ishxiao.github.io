@@ -1,4 +1,9 @@
 {
+    "mobileText":[{
+        "mobiletitle": "与艾希小聊天",
+        "istyping": "艾希小正在输入 ...",
+        "isntyping": "说点什么 ..."
+    }],
     "fromishx": [{
         "id": "0000",
         "details": [
