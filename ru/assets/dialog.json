@@ -1,4 +1,9 @@
 {
+    "mobileText":[{
+        "mobiletitle": "говоря с ishxiao",
+        "istyping": "печатает ...",
+        "isntyping": "Скажи что-нибудь.... "
+    }],
     "fromishx": [{
         "id": "0000",
         "details": [
