@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	    {% include header.html %}        
+	    <!--
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=100%, initial-scale=1">
+        <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- add language-->
+		<link rel="canonical" href="https://www.ishxiao.com/" />
+		<link rel="alternate" href="https://www.ishxiao.com/" hreflang="en-US" />
+		<link rel="alternate" href="https://www.ishxiao.com/cn/" hreflang="zh-CN">
+		<link rel="alternate" href="https://www.ishxiao.com/ru/" hreflang="ru-RU">
+		<!-- add viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="ishx Home">
+		<meta name="author" content = "ishx">
+		<!-- web icon -->
+		<link rel="shortcut icon" href="/favicon.ico"/>
+		<link rel="icon" href="/favicon.ico"/>		
+		<link rel="bookmark" href="/favicon.ico" type="image/x-icon"/>
+		<!-- support Safari Web Content -->
+		<link rel="apple-touch-icon" href="./images/ishx-256x256.png"/>
+		<link rel="apple-touch-startup-image" href="./images/ishx-256x256.png"/>
+		<meta name="apple-mobile-web-app-title" content="ishxiao"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		
+        <title>ishxiao</title>
+        <!--link href="css/mobile.min.css" rel="stylesheet" type="text/css"/-->
+		<link href="css/iphonex.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="mobile" :class="{ 'has-prompt': hasPrompt }">
             <div id="mobile-head">
-                <div id="mobile-head-title" v-html= "mobileText.mobiletitle"></div>
+                <div id="mobile-head-title">Chatting with ishxiao</div>
             </div>
             <div id="mobile-body">
                 <div id="mobile-body-bg"></div>
@@ -29,21 +57,21 @@
             <div id="mobile-foot">
                 <div id="prompt">
                     <div id="prompt-head">
-                        <div class="say-something" v-html= "mobileText.isntyping"></div>
+                        <div class="say-something">Say something...</div>
                         <a href="javascript:;" class="close-btn"
                             v-on:click="togglePrompt(false)"></a>
                     </div>
                     <div id="prompt-body">
                         <ul class="responses" v-if="lastDialog">
                             <li v-for="res in lastDialog.responses">
-                                <a href="javascript:;" v-on:click="respond(res)" > {% raw %}{{ res.content }} {% endraw %}</a>
+                                <a href="javascript:;" v-on:click="respond(res)">{{ res.content }}</a>
                             </li>
                         </ul>
                         <div class="next-topic"
                             v-if="!lastDialog || !lastDialog.responses">
                             <ul class="topics">
                                 <li v-for="topic in nextTopics">
-                                    <a href="javascript:;" v-on:click="ask(topic)"> {% raw %} {{ topic.brief }} {% endraw %}</a>
+                                    <a href="javascript:;" v-on:click="ask(topic)">{{ topic.brief }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,24 +80,23 @@
                 <div id="input-hint" class="say-something"
                     v-on:click="togglePrompt(true)"
                     :class="{'clickable': !isishxTyping }">
-                    <span v-if="!isishxTyping" v-html= "mobileText.isntyping"></span>
-                    <span v-if="isishxTyping" v-html= "mobileText.istyping"></span>
+                    <span v-if="!isishxTyping">Say something...</span>
+                    <span v-if="isishxTyping">ishxiao is typing</span>
                 </div>
             </div>
             <div id="prompt-bg" v-on:click="togglePrompt(false)"></div>
         </div>
-
-        <!-- nav -->
-        <div class="extra-link" id="meta-link">
-            <a id="en-link" class="letters" href="{{site.baseurl}}/cn" target="_self">
+		
+		<div class="extra-link" id="meta-link">
+            <a id="en-link" class="letters" href="./cn" target="_self">
                 中文
             </a>
-            <a class="letters" href="{{site.baseurl}}/blog" target="_blank">
+            <a class="letters" href="./blog" target="_blank">
                 Blog
             </a>
         </div>
-        
-        <div class="extra-link" id="social-link">
+		
+		<div class="extra-link" id="social-link">
             <a href="mailto:me@ishxiao.com" target="_blank">
                 <svg width="22px" height="20px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -85,17 +112,17 @@
                     </g>
                 </svg>
             </a>
-        </div>
+		</div>
 
-        <script src="{{site.baseurl}}/lib/zepto.min.js" type="text/javascript"></script>
-        <script src="{{site.baseurl}}/lib/vue.js" type="text/javascript"></script>
+        <script src="lib/zepto.min.js"></script>
+        <script src="lib/vue.js"></script>
 
-        <!--script src="js/mobile.min.js"></script-->
-		<script src="{{site.baseurl}}/js/mobile.js" type="text/javascript"></script>
+        <script src="js/mobile.min.js"></script>
+		<!--script src="js/mobile.js"></script-->
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-105389172-1']);
+            _gaq.push(['_setAccount', 'UA-105389172-1']);
             _gaq.push(['_trackPageview']);
             (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;

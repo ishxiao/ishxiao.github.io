@@ -24,6 +24,9 @@
 
             isishxTyping: false,
 
+            // mobile static text
+            mobileText: [],
+
             // topics that user can ask
             nextTopics: [],
 
@@ -35,6 +38,8 @@
         mounted() {
             $.getJSON('./assets/dialog.json', data => {
                 this.dialogs = data;
+
+                this.mobileText = this.dialogs.mobileText[0];
 
                 this.nextTopics = this.dialogs.fromUser;
 

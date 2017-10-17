@@ -1,4 +1,9 @@
 {
+    "mobileText":[{
+        "mobiletitle": "Chat with ishxiao",
+        "istyping": "ishxiao is typing ...",
+        "isntyping": "Say something ..."
+    }],
     "fromishx": [{
         "id": "0000",
         "details": [
