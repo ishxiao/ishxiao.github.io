@@ -1,19 +1,19 @@
 {
     "mobileText": [{
         "mobiletitle": "Chat with ishxiao",
-        "istyping": "ishxiao is typing ...",
-        "isntyping": "Say something ..."
+        "istyping": "ishxiao is typing...",
+        "isntyping": "Say something..."
     }],
     "fromishx": [{
         "id": "0000",
         "details": [
-            ["When I meet you"]
+            ["When I meet you."]
         ],
         "responses": [{
             "content": "So do I!",
             "nextishx": ["0003"]
         }, {
-            "content": "I feel very doubtful about this ...",
+            "content": "I doubt it...",
             "nextishx": ["0001"]
         }, {
             "content": "Really?",
@@ -29,7 +29,7 @@
     }, {
         "id": "0002",
         "details": [
-            ["Don't take it to heart, and I don't mean what i said."]
+            ["Don't worry, I don't mean what I said."]
         ],
         "nextishx": ["0003"]
     }, {
@@ -44,59 +44,58 @@
             "content": "What's the meaning of 'ishxiao'?",
             "nextishx": ["0005"]
         }, {
-            "content": "Can I ask everything?",
+            "content": "Can I ask anything?",
             "nextishx": ["0006"]
         }]
     }, {
         "id": "0004",
         "details": [
-            ["Hmm...", "This is a philosophical question...", "I thought you'd call me 'ishxiao' before I came up with the answer."]
+            ["Hmm...", "It's a philosophical question...", "I thought you'd call me 'ishxiao' before I came up with the answer."]
         ],
         "nextishx": ["0005"]
     }, {
         "id": "0005",
         "details": [
             ["ishxiao is my domain name.", 
-			 "If you were talking with me, you may have known this fact.",
-			 "Or to be precise",
-			 "<a href='http://ishxiao.com'>http://ishxiao.com</a>"
+			 "You may have known this fact.",
+			 "Specifically, <a href='http://ishxiao.com'>http://ishxiao.com</a>"
 			 ]
         ],
         "responses": [{
-            "content": "What do you do?",
+            "content": "What's your profession?",
             "nextishx": ["0023"]
         }, {
-            "content": "That's interesting~",
+            "content": "Wow, that's interesting.",
             "nextishx": ["0026"]
         }]
     }, {
         "id": "0006",
         "details": [
-            ["That's right", "But, you cannot type any text indeed~"]
+            ["That's right.", "Anyway, you cannot type anything indeed~"]
         ],
         "responses": [{
             "content": "...",
 			"nextishx": ["0041"]
         }, {
-            "content": "You win!"
+            "content": "Ok, you win!"
         }]
     }, {
         "id": "0007",
         "details": [
             [
                 "I often feel very boring...",
-                "When feeling boring, I will do reading, jogging, running (but staying at home) and et al.",
-                "I have been contacted with many hobbies and interests, that is, nothing perfect~"
+                "When feeling boring, I will do reading, jogging, running (but staying at home now) and et al.",
+                "I have been contacted with many hobbies and interests, but nothing perfect."
             ]
         ],
         "nextishx": ["0013"]
     }, {
         "id": "0008",
         "details": [
-            ["Yeah! I like it.", "My favorite book is 'Dream of Red Mansions'，being the best book all over the world."]
+            ["Yeah! I like it.", "My favorite book is 'The Story of the Stone'，the best book all over the world."]
         ],
         "responses": [{
-            "content": "Wow! I think so as well~",
+            "content": "Wow! I think so as well.",
             "nextishx": ["0010"]
         }, {
             "content": "All right...",
@@ -105,25 +104,25 @@
     }, {
         "id": "0009",
         "details": [
-            ["LOL, you guess?"]
+            ["LOL, guess?"]
         ],
         "responses": [{
-            "content": "ishxiao is so cute. I guess you were a boy！So... you may have a girl friend！",
+            "content": "ishxiao is so awesome. I guess you were a boy! So... you may have a girl friend!",
             "nextishx": ["0015"]
         }, {
-            "content": "If you really had one, please don't tell me!",
+            "content": "Even if you had one, you cannot tell me!",
             "nextishx": ["0018"]
         }, {
-            "content": "Huh! You cannot have one！",
+            "content": "LOL! You cannot have one!",
             "nextishx": ["0017"]
         }]
     }, {
         "id": "0010",
         "details": [
-            ["Would you like me to give some suggestion about good books?"]
+            ["Would you like me to recommend some good books?"]
         ],
         "responses": [{
-            "content": "OK! The book you recommend must be great~",
+            "content": "OK! Your recommendation must be great~",
             "nextishx": ["0011"]
         }, {
             "content": "Well, I'm not interested in it...",
@@ -132,7 +131,7 @@
     }, {
         "id": "0011",
         "details": [
-            ["This is the book list<a href='http://ishxiao.com/blog/2017/08/how-to-become-a-good-theoretical-physicist.html'>that I read recently</a>, hope you like them~"]
+            ["This is the book list <a href='http://ishxiao.com/blog/2017/08/how-to-become-a-good-theoretical-physicist.html'>that I read recently</a>, hope you like them."]
         ],
         "nextishx": ["0013"]
     }, {
@@ -145,7 +144,7 @@
     }, {
         "id": "0013",
         "details": [
-            ["Do you wanna view my painting?", "Notwithstanding...", "Have no talent..."]
+            ["Do you wanna view my painting?", "Notwithstanding...", "Have not great talent."]
         ],
         "responses": [{
             "content": "Ok! Ok!",
@@ -162,7 +161,11 @@
     }, {
         "id": "0015",
         "details": [
-            ["Yeah，you got it!", "This is my girl friend.", "<img src='images/ishx-256x256.png'>"]
+            [
+                "Yeah，you got it!", 
+                "This is my girl friend.",
+                "<img src='images/ishx-256x256.png'>"
+            ]
         ],
         "responses": [{
             "content": "...",
@@ -172,15 +175,15 @@
         "id": "0016",
         "details": [
             [
-                "Alright，I have to notice that（It is so embarrassed that you couldn't understand the joke~）",
-                "This is my own photo~",
+                "Alright，Note that (It is so embarrassed that you couldn't understand the joke~).",
+                "This is my own photo.",
                 "How are you? Is it glad to know the truth?"
             ]
         ],
         "responses": [{
-            "content": "You are so cute..."
+            "content": "You are so awesome."
         }, {
-            "content": "This is not a good joke..."
+            "content": "It isn't a good joke。"
         }]
     }, {
         "id": "0017",
@@ -194,7 +197,7 @@
             ["Well...", "<img src='images/ishx-256x256.png'>"]
         ],
         "responses": [{
-            "content": "Huh... I'm so curious about who can make you being fell in love with~",
+            "content": "Huh... I'm so curious about who can make you being fell in love with.",
             "nextishx": ["0020"]
         }, {
             "content": "Oh, I have nothing to say. Good byb! :)"
@@ -203,9 +206,9 @@
         "id": "0019",
         "details": [
             [
-                "This is...I don't know how to explain it",
-                "Maybe I'm cute with much special ideas, but don't like common things.",
-                "I'm easy to feel boring, and not interested in most things, but have a wide hobbies and interests."
+                "It's...I don't know how to explain it",
+                "Maybe I'm intelligent with much special ideas, but don't like common things.",
+                "I'm easy to feel boring without much interest in most cases."
             ]
         ],
         "nextUser": ["1000"]
@@ -221,7 +224,7 @@
     }, {
         "id": "0021",
         "details": [
-            ["Look! You cannot understand this idea, then you should know why I don't like you."]
+            ["Look! You cannot understand the idea, then you should know why I don't like you."]
         ],
         "responses": [{
             "content": "..."
@@ -231,8 +234,8 @@
         "details": [
             [
                 "<img src='images/ishx-256x256.png'>",
-                "This is my recent work~",
-                "Hope you like it~"
+                "This is my recent work.",
+                "Hope you like it."
             ]
         ]
     }, {
@@ -241,7 +244,7 @@
             ["Hmm, I'm a postgraduate.", "Exactly, study quantum physics"]
         ],
         "responses": [{
-            "content": "Hmmm~ quantum physics?",
+            "content": "Hmmm... Quantum physics?",
             "nextishx": ["0024"]
         }, {
             "content": "Do you want a new job?",
@@ -253,7 +256,7 @@
             ["Yep", "I'm doing research on quantum information."]
         ],
         "responses": [{
-            "content": "It sounds very interesting. Can tell me what do you do more specifically?",
+            "content": "It sounds very interesting. Can you tell me what does it do in detail?",
             "nextishx": ["0025"]
         }, {
             "content": "We’re doing something cool, and would you like to join us?",
@@ -279,7 +282,7 @@
         "id": "0027",
         "details": [
             [
-                "The idea of the home page comes from a conversational game",
+                "The idea of the home page comes from a conversational game.",
                 "Nowadays, we get to know a person through a similar instant tool to chat.",
                 "The impression, given via this mode, make not much more difference than that in the reality."
             ]
@@ -338,7 +341,7 @@
     }, {
         "id": "0032",
         "details": [
-            ["Hehe~ nothing much", "<img src='images/ishx-256x256.png'>"]
+            ["LOL~ nothing much", "<img src='images/ishx-256x256.png'>"]
         ]
     }, {
         "id": "0033",
@@ -373,7 +376,7 @@
     }, {
         "id": "0035",
         "details": [
-            ["Well，The animation effect are designed by<a href='http://ishxiao.com'>my bf</a>"]
+            ["Well，The animation effect are designed by <a href='http://ishxiao.com'>my bf</a>"]
         ],
         "responses": [{
             "content": "Ok, Here you are.",
@@ -385,7 +388,7 @@
     }, {
         "id": "0036",
         "details": [
-            ["The code is hosted on<a href='http://ishxiao.com'>ishxiao</a>", "Welcome to give me a like."]
+            ["The code is hosted on <a href='http://ishxiao.com'>ishxiao</a>", "Welcome to give me a like."]
         ]
     }, {
         "id": "0037",
@@ -415,7 +418,7 @@
         "responses": [{
             "content": "Ok!"
         }, {
-            "content": "Well~"
+            "content": "Well."
         }]
     }, {
         "id": "0039",
@@ -443,7 +446,7 @@
         "id": "1000",
         "brief": "Interest",
         "details": [
-            "What's your favorite ...?",
+            "What's your favorite...?",
             "What do you do in spare time?"
         ],
         "nextishx": ["0007"]
