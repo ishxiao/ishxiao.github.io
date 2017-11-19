@@ -1,58 +1,42 @@
-permalink: /:year/:month/:title.html 
-#include: ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
-# for math
-# markdown: redcarpet
-markdown: kramdown
-highlights: pygments
-#url: 
-lsi: false
-safe: true
+# Welcome to ishx!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# unsfixed
-# Error:  No source of timezone data could be found.
-# Please refer to http://tzinfo.github.io/datasourcenotfound for help resolving this error.
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-#timezone: Asia/Shanghai
-
-# auto: false 
-
-paginate: 8
-paginate_path: "page:num"
-
-kramdown:
-  auto_ids: true,
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-JB :
-  IMAGE_PATH : /images
-
-# presonal config
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: ishxiao
-baseurl: ""
+author: Xiao Shang
+email: me@ishxiao.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Stay hungry, stay foolish.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://ishxiao.com" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  ishxiao
+google_analytics: UA-105389172-1
 
-me:
-  name: ishxiao
-  author: Xiao Shang  
-  email: me@ishxiao.com
-  domain: http://ishxiao.com
-  description: "Stay hungry, stay foolish."
+# Build settings
+markdown: kramdown
+# theme: ishx-theme-awesome
+plugins:
+  - jekyll-feed
 
-github:
-  username: ishxiao
-  gh-page:  ishxiao.github.io
-  homepage: https://github.com  
-  icon: favicon.ico
-  avatar: https://avatars2.githubusercontent.com/u/22900608?v=3&amp;s=64
-  
-
-plugins: 
-  jekyll-paginate:
-
-config:
-  js_dir:
-  img_dir:
-  css_dir:
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,528 @@
+/* btn */
+.menu {
+  position: relative;
+  display:  inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 25px;
+}
+.menu span {
+  margin: 0 auto;
+  position: relative;
+  top: 12px;
+}
+.menu span:before, .menu span:after {
+  position: absolute;
+  content: '';
+}
+.menu span, .menu span:before, .menu span:after {
+  width: 30px;
+  height: 6px;
+  background-color: #000;
+  display: block;
+}
+.menu span:before {
+  margin-top: -12px;
+}
+.menu span:after {
+  margin-top: 12px;
+}
+/* --- btn --- */
+
+/* examples */
+
+/* example 1 */
+.example1 {
+  -webkit-transform: rotate(0deg); transform: rotate(0deg);
+  -webkit-transition: 0.2s ease; transition: 0.2s ease;
+}
+.example1:hover {
+  -webkit-transform: rotate(90deg); transform: rotate(90deg);
+}
+
+/* example 2 */
+.example2 span:before, .example2 span:after {
+  -webkit-transition: 0.2s ease; transition: 0.2s ease;
+}
+.example2:hover span:before, .example2:hover span:after {
+  margin-top: 0px;
+}
+
+/* example 3 */
+.example3 span {
+  -webkit-transition: 0.2s ease 0s; transition: 0.2s ease 0s;
+}
+.example3 span:before, .example3 span:after {
+  -webkit-transition-property: margin, opacity; transition-property: margin, opacity;
+  -webkit-transition-duration: 0.2s, 0s; transition-duration: 0.2s, 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example3:hover span {
+  width: 6px;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example3:hover span:before, .example3:hover span:after {
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/* example 4 */
+.example4 span {
+  -webkit-transition: 0.2s ease 0s; transition: 0.2s ease 0s;
+}
+.example4 span:before, .example4 span:after {
+  -webkit-transition-property: margin, opacity; transition-property: margin, opacity;
+  -webkit-transition-duration: 0.2s, 0s; transition-duration: 0.2s, 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example4:hover span {
+  -webkit-transform: rotate(90deg); transform: rotate(90deg);
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example4:hover span:before, .example4:hover span:after {
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition-delay: 0s, .2s; transition-delay: 0s, .2s;
+}
+
+/* example 5 */
+.example5 span {
+  -webkit-transition-duration: 0s; transition-duration: 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example5:hover span {
+  background-color: rgba(0,0,0,0.0);
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example5 span:before {
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.example5:hover span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(45deg); transform: rotate(45deg);
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.example5 span:after {
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.example5:hover span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-45deg); transform: rotate(-45deg);
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/* example 6 */
+.example6 span {
+  -webkit-transition-duration: 0s; transition-duration: 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example6:hover span {
+  background-color: rgba(0,0,0,0.0);
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example6 span:before {
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%;
+}
+.example6:hover span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(22.5deg) skewX(22.5deg); transform: rotate(22.5deg) skewX(22.5deg);
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.example6 span:after {
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  -webkit-transform-origin: 100% 0%; transform-origin: 100% 0%;
+}
+.example6:hover span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-22.5deg) skewX(-22.5deg); transform: rotate(-22.5deg) skewX(-22.5deg);
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/* example 7 */
+.example7 span {
+  -webkit-transition-duration: 0s; transition-duration: 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example7:hover span {
+  background-color: rgba(0,0,0,0.0);
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example7 span:before {
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  -webkit-transform-origin: 0% 100%; transform-origin: 0% 100%;
+}
+.example7:hover span:before {
+  margin-top: 0;
+  -webkit-transform: rotate(22.5deg) skewX(22.5deg); transform: rotate(22.5deg) skewX(22.5deg);
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.example7 span:after {
+  -webkit-transition-property: margin, -webkit-transform; transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+  -webkit-transform-origin: 0% 0%; transform-origin: 0% 0%;
+}
+.example7:hover span:after {
+  margin-top: 0;
+  -webkit-transform: rotate(-22.5deg) skewX(-22.5deg); transform: rotate(-22.5deg) skewX(-22.5deg);
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/* example 8 */
+.example8 span {
+  -webkit-transition: 0.2s ease 0s; transition: 0.2s ease 0s;
+}
+.example8 span:before, .example8 span:after {
+  -webkit-transition-property: margin, opacity; transition-property: margin, opacity;
+  -webkit-transition-duration: 0.2s, 0s; transition-duration: 0.2s, 0s;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example8:hover span {
+  width: 16px;
+  height: 16px;
+  margin-top: -5px;
+  -webkit-border-radius: 50%; border-radius: 50%;
+  -webkit-transition-delay: 0.2s; transition-delay: 0.2s;
+}
+.example8:hover span:before, .example8:hover span:after {
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+
+/* example 9 */
+.example9 span {
+  -webkit-transition-property: margin, width; transition-property: margin, width;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.example9:hover span {
+  margin-top: 6px;
+  width: 20px;
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.example9 span:after {
+  left: 0;
+  -webkit-transition-property: margin, left; transition-property: margin, left;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s; transition-delay: 0.2s, 0s;
+}
+.example9:hover span:after {
+  margin-top: 6px;
+  left: -5px;
+  -webkit-transition-delay: 0s, 0.2s; transition-delay: 0s, 0.2s;
+}
+.example9 span:before {
+  left: 0;
+  -webkit-transition-property: margin, width, left; transition-property: margin, width, left;
+  -webkit-transition-duration: 0.2s; transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s, 0s; transition-delay: 0.2s, 0s, 0s;
+}
+.example9:hover span:before {
+  margin-top: -6px;
+  width: 10px;
+  left: 5px;
+  -webkit-transition-delay: 0s, 0.2s, 0.2s; transition-delay: 0s, 0.2s, 0.2s;
+}
+
+//
+
+//
+.buttons-container{
+  margin: 100px auto;
+  text-align:center;
+}
+
+// =========== General button styles & variables =======================================//
+button{
+  display:inline-block;
+  margin: 0 1em;
+  border:none;
+  //background:none;
+  background-color: black;
+  border-radius: 3px;
+  float: left;
+  opacity: 0.5;
+  
+  span{
+    display:block;
+  }
+  z-index: 1;
+}
+
+$color : #ecf0f1;
+$transition: .3s;// increase this to see the transformations happen in slow motion
+
+// ==================================== grid button ====================================//
+
+// $base : 1rem;
+$base: 8px;
+$space : $base/4;
+
+//common to both grid buttons
+.grid-button {
+  padding: $base*2;
+  cursor: pointer;
+  user-select: none;
+}
+//common to both grid buttons
+.grid-button{
+  .grid{
+    width: $base;
+    height: $base;
+    background: $color;
+    color: $color; /* Not in use when the colors are specified below */
+    transition: $transition;
+  }
+}
+.grid-button.close{
+  .grid{
+    -webkit-transform: rotate3d(0,0,1,-45deg)  scale3d(.8,.8,.8);
+            transform: rotate3d(0,0,1,-45deg)  scale3d(.8,.8,.8);
+  }
+}
+//grid rearrange only
+.grid-button.rearrange {
+  .grid{
+    box-shadow:
+      -($base+$space) 0 -($base+$space),
+      0 0 -($base+$space),
+      ($base+$space) (-($base + $space)),
+      -($base+$space) 0,
+      $base+$space 0,
+      -($base+$space) ($base + $space),
+      0 ($base+$space),
+      ($base+$space) ($base + $space);
+  }
+}
+.grid-button.rearrange.close { 
+  .grid{
+      box-shadow:
+        0 0 -$base,
+        0 0 -$base*2,
+        $base 0,
+        -$base*2 0,
+        $base*2 0,
+        -$base 0,
+        0 $base*2,
+        0 $base;
+  }
+}
+.grid-button.collapse{
+  .grid{
+    box-shadow:
+    -($base+$space) 0,
+    -($base+$space) ($base+$space),
+    $base+$space 0,
+    ($base+$space) (-($base+$space)),
+    0 0 -($base+$space),
+    -($base+$space) 0 -($base+$space),
+    0 ($base+$space),
+    ($base+$space) ($base+$space);
+  }
+  
+}
+.grid-button.collapse.close {
+  .grid{
+    box-shadow:
+    -$base 0,
+    0 0 transparent,
+    $base 0,
+    0 0 transparent,
+    0 0 -$base,
+    0 0 transparent,
+    0 $base,
+    0 0 transparent;
+  }
+}
+
+
+/* ====================== lines button ==================================================*/
+
+// $button-size : 4rem;
+$button-size : 26px; 
+//common to all three-liners
+.lines-button {
+  padding: $button-size/2 $button-size/4;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  border-radius: $button-size/7;
+/* */
+  &:hover {
+    opacity: 1;
+  }
+  &:active {
+    transition: 0;
+  }
+}
+//common to all three-liners
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/7;
+  background: $color;
+  border-radius: $button-size/14; 
+  transition: $transition;
+}
+//common to all three-liners
+.lines {
+  @include line;
+  position: relative; 
+
+  &:before, &:after {
+   @include line;
+    position: absolute;
+    left:0;
+    content: '';
+    -webkit-transform-origin: $button-size/14 center;
+            transform-origin: $button-size/14 center;
+  }
+  &:before { 
+    top: $button-size/4; 
+  }
+  &:after { 
+    top: -$button-size/4; 
+  }
+}
+
+//common to all three-liners
+.lines-button:hover {
+  .lines {
+    &:before { 
+      top: $button-size/3.5; 
+    }
+    &:after { 
+      top: -$button-size/3.5; 
+    }
+  }
+}
+.lines-button.close {
+  -webkit-transform: scale3d(.8,.8,.8);
+          transform: scale3d(.8,.8,.8);
+}
+// for both the arrow up and left icons
+.lines-button.arrow.close {
+    .lines {
+      &:before,
+      &:after {
+        top: 0;
+        width: $button-size/1.8;
+      }
+      &:before { 
+        -webkit-transform: rotate3d(0,0,1,40deg); 
+                transform: rotate3d(0,0,1,40deg); 
+      }
+      &:after { 
+        -webkit-transform: rotate3d(0,0,1,-40deg); 
+                transform: rotate3d(0,0,1,-40deg); 
+      }
+    }
+}
+
+//arrow up only: just rotate by 90degrees
+.lines-button.arrow-up.close {
+  -webkit-transform: scale3d(.8,.8,.8) rotate3d(0,0,1,90deg);
+          transform: scale3d(.8,.8,.8) rotate3d(0,0,1,90deg);
+}
+
+//arrow right only: just rotate by 180degrees
+.lines-button.arrow-right.close {
+  -webkit-transform: scale3d(.8,.8,.8) rotate3d(0,0,1,180deg);
+          transform: scale3d(.8,.8,.8) rotate3d(0,0,1,180deg);
+}
+
+//arrow down only: just rotate by -90degrees
+.lines-button.arrow-down.close {
+  -webkit-transform: scale3d(.8,.8,.8) rotate3d(0,0,1,-90deg);
+          transform: scale3d(.8,.8,.8) rotate3d(0,0,1,-90deg);
+}
+
+// default left
+//arrow left only: just rotate by 90degrees
+// .lines-button.arrow-left.close {
+//   -webkit-transform: scale3d(.8,.8,.8) rotate3d(0,0,1,0deg);
+//           transform: scale3d(.8,.8,.8) rotate3d(0,0,1,0deg);
+// }
+
+//three-lines to minus only
+.lines-button.minus.close{
+  .lines {
+    &:before, &:after{
+      -webkit-transform: none;
+              transform: none;
+      top:0;
+      width: $button-size;
+    }
+  }
+}
+
+//three-lines to x
+.lines-button.x.close{
+  .lines {
+    background: transparent;
+    &:before, &:after{
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      top:0;
+      width: $button-size;
+    }
+    &:before{
+      -webkit-transform: rotate3d(0,0,1,45deg); 
+              transform: rotate3d(0,0,1,45deg); 
+    }
+    &:after{
+      -webkit-transform: rotate3d(0,0,1,-45deg); 
+              transform: rotate3d(0,0,1,-45deg); 
+    }
+  }
+}
+
+//three-lines to x method 2
+.lines-button.x2{
+    .lines{
+      transition: background .3s .5s ease;
+
+      &:before, &:after{
+        //set transform origin
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+        transition: top .3s .6s ease, -webkit-transform .3s ease;
+        transition: top .3s .6s ease, transform .3s ease;
+      }
+    }
+}
+
+.lines-button.x2.close{
+  .lines {
+    transition: background .3s 0s ease;
+    background: transparent;
+
+    &:before, &:after{
+      transition: top .3s ease, -webkit-transform .3s .5s ease;//delay the formation of the x till the minus is formed  
+      transition: top .3s ease, transform .3s .5s ease;//delay the formation of the x till the minus is formed  
+      top:0;
+      width: $button-size;
+    }
+    &:before{
+      -webkit-transform: rotate3d(0,0,1,45deg); 
+              transform: rotate3d(0,0,1,45deg); 
+    }
+    &:after{
+      -webkit-transform: rotate3d(0,0,1,-45deg); 
+              transform: rotate3d(0,0,1,-45deg); 
+    }
+  }
+}
