@@ -8,10 +8,10 @@ layout: home
 
 ## Principal Investigator
 
-Xiao Shang is the Group Director of the Quantum Physics Research Group (QPRG).
+ishxiao is the Group Director of ishxiao Research Group (ishx-RG).
 
 
-### Research topics:
+### Research topics
 
 - Quantum Information and Computing
 - Computational Physics
