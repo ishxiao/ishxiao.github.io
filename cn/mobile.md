@@ -1,6 +1,6 @@
 ---
 layout: mobile
 title:  "Mobile"
-permalink: /mobile/
+permalink: /cn/mobile/
 ---
 
