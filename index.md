@@ -6,6 +6,8 @@ layout: home
 
 <!-- meta http-equiv="refresh" content="5; url=mobile.html"/ -->
 
+[中文]({{ "/cn/" | absolute_url}})
+
 ## Principal Investigator
 
 ishxiao is the Group Director of ishxiao Research Group (ishx-RG).
