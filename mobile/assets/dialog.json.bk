@@ -326,7 +326,7 @@
             "content": "Haven't seen you yet",
             "nextishx": ["0031"]
         }, {
-            "content": "ishxiao must be the most gorgeous!",
+            "content": "ishxiao must be the most gorgerous!",
             "nextishx": ["0032"]
         }]
     }, {
@@ -462,7 +462,7 @@
         "id": "1003",
         "brief": "Love",
         "details": [
-            "May I ask your an emotional question？LOL",
+            "May I ask your a emotive question？LOL",
             "Is there a bf?"
         ],
         "nextishx": ["0009"]
@@ -523,7 +523,7 @@
         "brief": "About",
         "details": [
             "This homepage is great.",
-            "This homepage is gorgeous~"
+            "This homepage is gogerous~"
         ],
         "nextishx": ["0026", "0027"]
     }]
