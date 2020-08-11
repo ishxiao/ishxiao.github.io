@@ -22,7 +22,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ishxiao.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: ishxiao
 google_analytics: UA-105389172-1
-ChatraID: seXKBm3cgvvCSbQp3
 
 # Build settings
 markdown: kramdown
@@ -34,6 +33,9 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
   - node_modules
