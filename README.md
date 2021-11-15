@@ -1,6 +1,6 @@
 # ishxiao Homepage
 
-[![Build Status](https://github.com/ishxiao/ishxiao.github.io/workflows/jekyll/badge.svg "Test")](https://github.com/ishxiao/ishxiao.github.io/actions?query=workflow%3Ajekyll)
+[![Build Status](https://github.com/ishxiao/ishxiao.github.io/workflows/jekyll/badge.svg)](https://github.com/ishxiao/ishxiao.github.io/actions?query=workflow%3Ajekyll)
 
 Please visit: http://ishxiao.com.
 
