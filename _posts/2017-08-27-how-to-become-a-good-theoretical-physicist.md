@@ -306,7 +306,8 @@ There are numerous good books on all sorts of topics in Theoretical Physics. Her
 - Quantum Mechanics - an Introduction, 4th ed. - W. Greiner
 - R. Shankar, Principles of Quantum Mechanics, Plenum
 - Quantum Mechanics - Symmetries 2nd ed. - W. Greiner, B. Muller
-- Quantum Mechanics - Vol 1&2 - Cohen-TannoudjiJ.J. Sakurai, Advanced Quantum Mechanics, Addison-Wesley
+- Quantum Mechanics - Vol 1&2 - Cohen-Tannoudji
+- J.J. Sakurai, Advanced Quantum Mechanics, Addison-Wesley
 
 **Electrodynamics:**
 
