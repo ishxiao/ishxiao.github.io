@@ -1,6 +1,7 @@
 /**
  * Site header
  */
+
 .site-header {
   // border-top: 0px solid $grey-color-dark;
   border-top: 2px solid $blue-color;
@@ -38,14 +39,14 @@
 @mixin line {
   display: inline-block;
   width: $navline-size;
-  height: $navline-size/16;
+  height: calc($navline-size/16);
   // background-color: rgba(0,255,0,.25);
   // background-image: radial-gradient(yellow 10%, rgba(0,0,0,.25) 10%, rgba(0,0,0,.25) 50%, transparent 50%);
   // background-repeat: no-repeat;
   // background-size: $navicon-size/8 $navicon-size/8;
   // user-select: none;
   background: $navicon-color;
-  border-radius: $navline-size/16; 
+  border-radius: calc($navline-size/16); 
   // color: green;
   transition: $navicon-transition;
   //box-shadow: inset 0 0 0 .125rem;
@@ -83,7 +84,7 @@
     position: absolute;
     top: 9px;
     //right: $spacing-unit / 2;
-    left: $spacing-unit / 2;
+    left: calc($spacing-unit / 2);
     // background-color: $background-color;
     background-color: $head-background-color;
     // border: 1px solid $grey-color-light;
@@ -134,7 +135,7 @@
     //
     .navicon-button {
       display: inline-block;
-      padding: $navline-size/2 $navline-size/4;
+      padding: calc($navline-size/2) calc($navline-size/4);
       //padding: 0;
       // //width: $navicon-size/1.6;
       // //height: $navicon-size/1.8;
@@ -156,7 +157,7 @@
       // background-color: none;
       cursor: pointer;
       user-select: none;
-      bord-radus: $navline-size/8;
+      bord-radus: calc($navline-size/8);
       
       &:hover {
         opacity: 1;
@@ -179,18 +180,18 @@
         position: absolute;
         left: 0;
         content: '';
-        -webkit-transform-origin: $navicon-size/3 center;
-                transform-origin: $navicon-size/3 center;
+        -webkit-transform-origin: calc($navicon-size/3) center;
+                transform-origin: calc($navicon-size/3) center;
         // -webkit-transform-origin: 50% 50%;
         //         transform-origin: 50% 50%;
       }
       &:before {
-        top: -($navline-size/4);
+        top: - math.div($navline-size, 4);
         color: $navicon-color-before;
         background-color: $navicon-color-before;
       }
       &:after {
-        top: $navline-size/4;
+        top: calc($navline-size/4);
         color: $navicon-color-after;
         background-color: $navicon-color-after;
       }
@@ -199,10 +200,10 @@
     .navicon-button:hover{
       .navicon {
         &:before {
-          top: -$navline-size/4;
+          top: - calc($navline-size/4);
         }
         &:after {
-          top: $navline-size/4;
+          top: calc($navline-size/4);
         }
       }
     }

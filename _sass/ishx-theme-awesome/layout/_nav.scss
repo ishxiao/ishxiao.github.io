@@ -1,7 +1,3 @@
-/**
- * Site nav
- */
-
 /* btn */
 .menu {
   position: relative;
@@ -273,7 +269,7 @@ $transition: .3s;// increase this to see the transformations happen in slow moti
 
 // $base : 1rem;
 $base: 8px;
-$space : $base/4;
+$space : calc($base/4);
 
 //common to both grid buttons
 .grid-button {
@@ -301,12 +297,12 @@ $space : $base/4;
 .grid-button.rearrange {
   .grid{
     box-shadow:
-      -($base+$space) 0 -($base+$space),
-      0 0 -($base+$space),
+      (-($base + $space)) 0 (-($base + $space)),
+      0 0 (-($base + $space)),
       ($base+$space) (-($base + $space)),
       -($base+$space) 0,
       $base+$space 0,
-      -($base+$space) ($base + $space),
+      (-($base + $space)) ($base + $space),
       0 ($base+$space),
       ($base+$space) ($base + $space);
   }
@@ -314,8 +310,8 @@ $space : $base/4;
 .grid-button.rearrange.close { 
   .grid{
       box-shadow:
-        0 0 -$base,
-        0 0 -$base*2,
+        0 0 (-$base),
+        0 0 (-$base * 2),
         $base 0,
         -$base*2 0,
         $base*2 0,
@@ -331,9 +327,9 @@ $space : $base/4;
     -($base+$space) ($base+$space),
     $base+$space 0,
     ($base+$space) (-($base+$space)),
-    0 0 -($base+$space),
-    -($base+$space) 0 -($base+$space),
-    0 ($base+$space),
+    0 0 (-($base + $space)),
+    (-($base + $space)) 0 (-($base + $space)),
+    0 ($base + $space),
     ($base+$space) ($base+$space);
   }
   
@@ -345,7 +341,7 @@ $space : $base/4;
     0 0 transparent,
     $base 0,
     0 0 transparent,
-    0 0 -$base,
+    0 0 (-$base),
     0 0 transparent,
     0 $base,
     0 0 transparent;
@@ -359,11 +355,11 @@ $space : $base/4;
 $button-size : 26px; 
 //common to all three-liners
 .lines-button {
-  padding: $button-size/2 $button-size/4;
+  padding: calc($button-size / 2) calc($button-size / 4);
   transition: .3s;
   cursor: pointer;
   user-select: none;
-  border-radius: $button-size/7;
+  border-radius: calc($button-size / 7);
 /* */
   &:hover {
     opacity: 1;
@@ -376,9 +372,9 @@ $button-size : 26px;
 @mixin line {
   display: inline-block;
   width: $button-size;
-  height: $button-size/7;
+  height: calc($button-size / 7);
   background: $color;
-  border-radius: $button-size/14; 
+  border-radius: calc($button-size / 14); 
   transition: $transition;
 }
 //common to all three-liners
@@ -391,14 +387,14 @@ $button-size : 26px;
     position: absolute;
     left:0;
     content: '';
-    -webkit-transform-origin: $button-size/14 center;
-            transform-origin: $button-size/14 center;
+    -webkit-transform-origin: calc($button-size/14) center;
+            transform-origin: calc($button-size/14) center;
   }
   &:before { 
-    top: $button-size/4; 
+    top: calc($button-size / 4); 
   }
   &:after { 
-    top: -$button-size/4; 
+    top: - calc($button-size / 4); 
   }
 }
 
@@ -406,10 +402,10 @@ $button-size : 26px;
 .lines-button:hover {
   .lines {
     &:before { 
-      top: $button-size/3.5; 
+      top: calc($button-size / 3.5); 
     }
     &:after { 
-      top: -$button-size/3.5; 
+      top: - calc($button-size / 3.5); 
     }
   }
 }
@@ -423,7 +419,7 @@ $button-size : 26px;
       &:before,
       &:after {
         top: 0;
-        width: $button-size/1.8;
+        width: calc($button-size/1.8);
       }
       &:before { 
         -webkit-transform: rotate3d(0,0,1,40deg); 
